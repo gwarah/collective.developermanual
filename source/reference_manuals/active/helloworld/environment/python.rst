@@ -86,6 +86,7 @@ We can keep buildout from building the other versions by commenting them out in 
         src/python27.cfg
     #     src/python32.cfg
     #     src/python33.cfg
+    #     src/python34.cfg
         src/links.cfg
     
     parts =
@@ -98,6 +99,9 @@ We can keep buildout from building the other versions by commenting them out in 
         ${buildout:python27-parts}
     #     ${buildout:python32-parts}
     #     ${buildout:python33-parts}
+    #     ${buildout:python34-parts}
+        ${buildout:pypy-parts}
+        ${buildout:pypy3-parts}
         ${buildout:links-parts}
         
     
